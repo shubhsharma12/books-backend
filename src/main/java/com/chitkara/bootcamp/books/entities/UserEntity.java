@@ -7,7 +7,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "user", schema = "userinfo")
-public class User implements Serializable {
+public class UserEntity implements Serializable {
 
     /**
 	 * 
@@ -18,9 +18,6 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
     private Long userId;
-
-    @Column(name = "username", unique = true, nullable = false)
-    private String username;
 
     @Column(name = "email", unique = true, nullable = false)
     private String email;
@@ -52,14 +49,6 @@ public class User implements Serializable {
 
     public void setUserId(Long userId) {
         this.userId = userId;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
     }
 
     public String getEmail() {
