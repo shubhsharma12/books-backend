@@ -11,7 +11,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "user", schema = "userinfo")
-public class User implements Serializable {
+public class UserEntity implements Serializable {
 
 	/**
 	 * 
@@ -49,13 +49,13 @@ public class User implements Serializable {
 //        this.summaries = summaries;
 //    }
 
-	public User(String email, String password) {
+	public UserEntity(String email, String password) {
 		super();
 		this.email = email;
 		this.password = password;
 	}
 
-	public User() {
+	public UserEntity() {
 		super();
 	}
 
