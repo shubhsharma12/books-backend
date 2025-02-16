@@ -5,8 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.chitkara.bootcamp.books.entities.User;
 
-
-public interface UserRepo 
-{
+@Repository
+public interface UserRepo extends JpaRepository<User, Long>{
 
 }
