@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "summary", schema = "books")
-public class Summary implements Serializable {
+public class SummaryEntity implements Serializable {
 
     /**
 	 * 
@@ -25,7 +25,7 @@ public class Summary implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "user_id", referencedColumnName = "user_id", nullable = false)
-    private User user;
+    private UserEntity user;
 
     // Getters and Setters
     public Long getSummaryId() {
@@ -52,11 +52,11 @@ public class Summary implements Serializable {
         this.summaryText = summaryText;
     }
 
-    public User getUser() {
+    public UserEntity getUser() {
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUser(UserEntity user) {
         this.user = user;
     }
 }
