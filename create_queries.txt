@@ -1,0 +1,22 @@
+CREATE SCHEMA IF NOT EXISTS userinfo;
+
+CREATE TABLE userinfo.user (
+    user_id SERIAL PRIMARY KEY,
+    username VARCHAR(255) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+
+
+CREATE SCHEMA IF NOT EXISTS books;
+
+CREATE TABLE books.summary (
+    summary SERIAL PRIMARY KEY,
+    bookname VARCHAR(255) NOT NULL,
+    summary_text TEXT NOT NULL,
+    user_id INT,
+    FOREIGN KEY (user_id) REFERENCES userinfo.user(user_id)
+);
