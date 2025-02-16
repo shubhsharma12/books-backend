@@ -1,22 +1,22 @@
 -- Insert a new user
 INSERT INTO userinfo.user (username, email, first_name, last_name, password)
-VALUES ('alice_smith', 'alice.smith@example.com', 'Alice', 'Smith', 'password123');
+VALUES ('alice.smith@example.com', 'Alice', 'Smith', 'password123');
 
 -- Insert another new user
 INSERT INTO userinfo.user (username, email, first_name, last_name, password)
-VALUES ('bob_jones', 'bob.jones@example.com', 'Bob', 'Jones', 'bobpassword2023');
+VALUES ('bob.jones@example.com', 'Bob', 'Jones', 'bobpassword2023');
 
 -- Insert a user
 INSERT INTO userinfo.user (username, email, first_name, last_name, password)
-VALUES ('charlie_brown', 'charlie.brown@example.com', 'Charlie', 'Brown', 'charliepassword');
+VALUES ('charlie.brown@example.com', 'Charlie', 'Brown', 'charliepassword');
 
 -- Insert another user
 INSERT INTO userinfo.user (username, email, first_name, last_name, password)
-VALUES ('david_lee', 'david.lee@example.com', 'David', 'Lee', 'davidsecure123');
+VALUES ('david.lee@example.com', 'David', 'Lee', 'davidsecure123');
 
 -- Insert a user with a very long username
 INSERT INTO userinfo.user (username, email, first_name, last_name, password)
-VALUES ('verylongusername12345', 'long.username@example.com', 'Long', 'Username', 'longpassword2025');
+VALUES ('long.username@example.com', 'Long', 'Username', 'longpassword2025');
 
 
 -- Insert a new book summary
