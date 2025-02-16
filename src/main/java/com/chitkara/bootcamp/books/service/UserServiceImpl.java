@@ -39,10 +39,8 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public UserEntity loadUserByUsername(String email) throws Exception {
 		// Write logic to fetch customer from DB
-		UserEntity user = userRepo.findByEmail(email)
-				.orElseThrow(() -> new Exception("Customer not found with email: " + email));
+		return userRepo.findByEmail(email).orElseThrow(() -> new Exception("Customer not found with email: " + email));
 
-		return new UserEntity(user.getEmail(), user.getPassword());
 	}
 
 }
