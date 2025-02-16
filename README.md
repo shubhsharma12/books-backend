@@ -1,5 +1,6 @@
-#### Application properties
+# Application properties
 
+```
 spring.application.name=books
 
 spring.datasource.url=jdbc:postgresql://localhost:5432/chitkara_university
@@ -9,7 +10,8 @@ spring.datasource.driver-class-name=org.postgresql.Driver
 spring.datasource.hikari.maximum-pool-size=10
 
 
-# Hibernate Configuration
+ # Hibernate Configuration
 spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.hibernate.ddl-auto=none
 spring.jpa.show-sql=true
+```
